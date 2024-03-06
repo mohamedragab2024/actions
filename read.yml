@@ -1,0 +1,8 @@
+---
+name: "Branch Reader"
+runs:
+  using: "composite"
+  steps:
+   - name: Read remote branch name
+     runs: |
+       echo "My remote branch name is ${{ github.ref_name }}"
