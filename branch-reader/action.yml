@@ -4,5 +4,6 @@ runs:
   using: "composite"
   steps:
    - name: Read remote branch name
+     shell: bash
      run: |
        echo "My remote branch name is ${{ github.ref_name }}"
